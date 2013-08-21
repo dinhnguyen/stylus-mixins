@@ -1,14 +1,21 @@
 =============================
 
 Stylus Mixins
+
 Version 1.0
+
 August 21, 2013
+
 Created by Dinh Nguyen
+
 Original: www.dinhnguyen.info
+
 License: MIT/GPL
+
 https://github.com/dinhnguyen/stylus-mixins.git
 
 Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style.
+
 http://learnboost.github.io/stylus/
 
 =============================
