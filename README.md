@@ -41,7 +41,7 @@ h1
 	fo-s 0.0001em
 ```
 
-it will compline to this 
+compiles to
 
 ```css
 h1 {
