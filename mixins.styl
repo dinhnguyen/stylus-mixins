@@ -131,3 +131,157 @@ opa(n)
 	zoom 1
 	opacity n
 	filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+
+// Flexbox mixins
+flex()
+	display: flex
+
+flex-dir()
+	flex-direction: arguments
+
+flex-wrap()
+	flex-wrap: arguments
+
+flex-flow(dir, wrap)
+	flex-flow: dir wrap
+
+justify()
+	justify-content: arguments
+
+align-items()
+	align-items: arguments
+
+align-content()
+	align-content: arguments
+
+align-self()
+	align-self: arguments
+
+flex-grow()
+	flex-grow: arguments
+
+flex-shrink()
+	flex-shrink: arguments
+
+flex-basis()
+	flex-basis: arguments
+
+// Grid mixins
+grid()
+	display: grid
+
+grid-template-cols()
+	grid-template-columns: arguments
+
+grid-template-rows()
+	grid-template-rows: arguments
+
+grid-template-areas()
+	grid-template-areas: arguments
+
+grid-gap()
+	grid-gap: arguments
+
+grid-column-gap()
+	grid-column-gap: arguments
+
+grid-row-gap()
+	grid-row-gap: arguments
+
+// Transform mixins
+transform()
+	-webkit-transform: arguments
+	-moz-transform: arguments
+	-ms-transform: arguments
+	-o-transform: arguments
+	transform: arguments
+
+rotate(deg)
+	transform: rotate(deg)
+
+scale(n)
+	transform: scale(n)
+
+translate(x, y)
+	transform: translate(x, y)
+
+translateX()
+	transform: translateX(arguments)
+
+translateY()
+	transform: translateY(arguments)
+
+// Transition mixins
+transition()
+	-webkit-transition: arguments
+	-moz-transition: arguments
+	-ms-transition: arguments
+	-o-transition: arguments
+	transition: arguments
+
+// Animation mixins
+animation()
+	-webkit-animation: arguments
+	-moz-animation: arguments
+	-ms-animation: arguments
+	-o-animation: arguments
+	animation: arguments
+
+// Media query mixins
+mobile()
+	@media screen and (max-width: 480px)
+		{block}
+
+tablet()
+	@media screen and (min-width: 481px) and (max-width: 1024px)
+		{block}
+
+desktop()
+	@media screen and (min-width: 1025px)
+		{block}
+
+// Visibility mixins
+hide()
+	display: none
+
+show()
+	display: block
+
+vis()
+	visibility: arguments
+
+// Text mixins
+ellipsis()
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+word-wrap()
+	word-wrap: break-word
+	overflow-wrap: break-word
+
+// Filter mixins
+filter()
+	-webkit-filter: arguments
+	-moz-filter: arguments
+	-ms-filter: arguments
+	filter: arguments
+
+blur(radius)
+	filter: blur(radius)
+
+grayscale(amount)
+	filter: grayscale(amount)
+
+// User select mixins
+user-select(value)
+	-webkit-user-select: value
+	-moz-user-select: value
+	-ms-user-select: value
+	user-select: value
+
+// Appearance mixins
+appearance(value)
+	-webkit-appearance: value
+	-moz-appearance: value
+	appearance: value
