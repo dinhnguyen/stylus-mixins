@@ -1,66 +1,119 @@
-=============================
+# Stylus Mixins
 
-Stylus Mixins
+A collection of clean and practical mixins for [Stylus](https://stylus-lang.com/) to help you write faster, cleaner, and more maintainable CSS.
 
-Version 1.0
+---
 
-August 21, 2013
+**Author:** Dinh Nguyen  
+**Website:** [www.dinhnguyen.info](http://www.dinhnguyen.info)  
+**License:** MIT / GPL  
+**Repository:** [github.com/dinhnguyen/stylus-mixins](https://github.com/dinhnguyen/stylus-mixins)
 
-Created by Dinh Nguyen
+---
 
-Original: www.dinhnguyen.info
+## 📌 Features
 
-License: MIT/GPL
+- Lightweight, easy-to-use mixins
+- Supports both indented and CSS-like Stylus syntax
+- Covers common utilities: spacing, sizing, display, positioning
+- Includes modern mixins for:
+  - Flexbox
+  - CSS Grid
+  - Transforms
+  - Typography helpers
+  - Backgrounds and more
 
-https://github.com/dinhnguyen/stylus-mixins.git
+---
 
-Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style.
+## 🚀 Getting Started
 
-http://learnboost.github.io/stylus/
+### 1. Install Stylus (if not already)
 
-=============================
-
-Usage is simple:
-
-1) Creat your stylus file "file_name.styl"
-
-2) Include mixins file on top of your stylus files
-
-```css
-@import "mixins.styl";
+```bash
+npm install stylus -g
 ```
 
-3) Start write your stylus and use mixins, like this
+### 2. Clone or download the mixins file
 
-```css
+```bash
+git clone https://github.com/dinhnguyen/stylus-mixins.git
+```
+
+### 3. Import the mixins in your `.styl` file
+
+```stylus
+@import 'mixins.styl'
+```
+
+> Make sure the path to `mixins.styl` is correct relative to your project structure.
+
+### 4. Use the mixins in your Stylus code
+
+```stylus
 h1
-	dis inline-block
-	wh 251px 200px
-	bg url('../text-logo.png') no-repeat
-	tex-i -9999px
-	fo-s 0.0001em
+  dis inline-block
+  wh 251px 200px
+  bg url('../text-logo.png') no-repeat
+  tex-i -9999px
+  fo-s 0.0001em
 ```
 
-compiles to
+Compiles to:
 
 ```css
 h1 {
-	display: inline-block;
-	width: 251px;
-	height: 200px;
-	background:url("../text-logo.png") no-repeat;
-	text-indent: -9999px;
-	font-size: .0001em
-	}
+  display: inline-block;
+  width: 251px;
+  height: 200px;
+  background: url("../text-logo.png") no-repeat;
+  text-indent: -9999px;
+  font-size: 0.0001em;
+}
 ```
 
-4) Enjoy its :)
+---
 
-=============================
-Change Notes:
-=============================
+## 📒 Mixin Naming Reference (Examples)
 
-v1.0
-	- First commit
+| Mixin     | Description                     |
+|-----------|---------------------------------|
+| `dis`     | `display` shorthand             |
+| `wh`      | `width` + `height`              |
+| `bg`      | `background` shorthand          |
+| `tex-i`   | `text-indent`                   |
+| `fo-s`    | `font-size`                     |
+| `flex-c`  | Centered Flexbox container      |
+| `abs`     | Absolute positioning            |
+| `trf`     | CSS transform shorthand         |
 
+(See full list in `mixins.styl`)
 
+---
+
+## 📦 Changelog
+
+### v2.0
+- Added modern CSS mixins:
+  - Flexbox helpers (`flex`, `flex-c`, `flex-wrap`, etc.)
+  - Grid utilities
+  - Transform and transition shorthands
+  - Enhanced spacing and layout mixins
+
+### v1.0
+- Initial release
+
+---
+
+## 📃 License
+
+Dual-licensed under the **MIT** and **GPL** licenses.  
+Use it freely in both personal and commercial projects.
+
+---
+
+## 🙌 Contributions
+
+Feel free to fork, submit pull requests, or suggest improvements!
+
+> Happy coding!  
+> — *Dinh Nguyen*
